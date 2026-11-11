@@ -1,0 +1,34 @@
+#!/bin/bash
+
+HOME_DIR="/home/blackdream"
+PICS="$HOME_DIR/Pictures"
+LINUX_DST="$HOME_DIR/LinuxDistro"
+OTHER="$HOME_DIR/OtherFiles"
+
+
+for file in "$HOME_DIR"/*; do
+    [ -f "$file" ] || continue
+    case "${file,,}" in
+        *.png| *.jpg| *.jpeg)
+            mv -n -- "$file" "$PICS/"
+            echo "$(basename "$file") -> pictures"
+            ;;
+        *.iso)
+            mv -n -- "$file" "$LINUX_DST/"
+            echo "$(basename "$file") -> LinuxDistro"
+            ;; 
+        *)
+            mv -n -- "$file" "$OTHER/"
+	    echo "$(basename "$file") -> other"
+ 	    ;;
+    esac
+done    
+	   
+
+echo "
+
++-----------------+
+|     finish      |
++-----------------+
+"
+
