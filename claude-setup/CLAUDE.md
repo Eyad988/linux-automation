@@ -23,4 +23,6 @@ I have two saved video formats (skills in `~/.claude/skills/`):
 - **"الصيغة التقنية" / "الشرح التقني"** → skill `tech-explainer`: short 25 to 30 s neon-circuit explainer on any tech topic.
 - **"الشرح العميق"** → skill `deep-explanation`: one concept in depth, exam-ready.
 
+Save every video you make in `~/MadeByClaude/` (create it with `mkdir -p` if missing), with a clear file name like `grep-tech-explainer.mp4`. Keep temp frames and audio out of it, and print the final path when done.
+
 Rules for all my videos: no music, no drone, no repeating beat, and typing sounds very quiet. Test new styles with a short 20 to 30 s clip first.

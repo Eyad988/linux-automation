@@ -32,4 +32,4 @@ A short, punchy vertical explainer video on a tech topic (Linux, commands, tools
 - Synthesize audio with numpy from a log of sound events and their times.
 - Before the full render, save stills of the busiest moments and check them (Arabic shaping, text inside the frame).
 - Arabic text needs Pillow with libraqm (`ImageFont.Layout.RAQM`) and an Arabic font such as Noto Sans Arabic. Find fonts with `fc-list | grep -i arab`.
-- Work in a temp folder; save the final video where he asks (default `~/Videos/`) and print its path.
+- Work in a temp folder; save the final video in `~/MadeByClaude/` (`mkdir -p` it first) and print its path.

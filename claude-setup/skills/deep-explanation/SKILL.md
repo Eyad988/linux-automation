@@ -39,3 +39,5 @@ Title → الفكرة الأساسية → المشكلة → التشبيه �
 
 ## Build notes
 Render each shot as its own mp4 (PIL frames piped to ffmpeg, libx264 veryfast, crf 20), fade content in/out inside each shot over the shared background, log sound events with their global times while rendering, synthesize the audio with numpy from that log, concat with -c copy and mux the audio last. Check stills of the busiest moments before the full render.
+
+Save the final video in `~/MadeByClaude/` (`mkdir -p` it first) with a clear name, keep temp files elsewhere, and print the path.
